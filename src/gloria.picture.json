@@ -6,9 +6,9 @@
             "attribute":"data-gl-target"
         },
         "glSave":{
-            "role":"id attribute of a HTMLForm which will send datas to a server for saving",
+            "role":"id attribute of a HTMLForm  or any container which will send datas in base64 format to a server for saving",
             "attribute":"data-gl-save",
-            "attention":"img must have in a name attribute in this case."
+            "attention":"img must have a name attribute in this case."
         },
         "glProtect":{
             "role":"Define if the picture is downloadable or not",
