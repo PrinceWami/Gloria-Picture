@@ -1,0 +1,19 @@
+{
+    "class":["gl-picture"],
+    "dataset":{
+        "glTarget":{
+            "role":"Target an img HTMLContent to display the same picture than on this one",
+            "attribute":"data-gl-target"
+        },
+        "glSave":{
+            "role":"id attribute of a HTMLForm which will send datas to a server for saving",
+            "attribute":"data-gl-save",
+            "attention":"img must have in a name attribute in this case."
+        },
+        "glProtect":{
+            "role":"Define if the picture is downloadable or not",
+            "attribute":"data-gl-protect",
+            "attention":"img must have width and height attributes or width and height defined styles"
+        }
+    }
+}
