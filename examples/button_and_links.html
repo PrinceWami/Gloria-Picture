@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Picture Demo</title>
+</head>
+<body>
+    <h1>Buttons And Links</h1>
+    <div style="display: inline-block;">
+        <p>Non-Protected - will be downloadable from right click &nbsp;</p>
+        <img id="non_protected" src="./asset/tpw.jpg" alt="">
+        <button class="gl-picture" data-gl-target="non_protected">Select Picture</button>
+    </div>
+
+    <div style="display: inline-block;">
+        <p>Protected - Wont be downloadable</p>
+        <!-- Must have width and Heigth defined... even as below or with styles -->
+        <img id="protected" src="./asset/tpw.jpg" width="200" height="200" alt="" class="gl-picture" data-gl-protect="true">
+        <a href="#" class="gl-picture" data-gl-target="protected">Select Picture</a>
+    </div>
+</body>
+    <script src="../dist/gloria.picture-min.js"></script>
+</html>

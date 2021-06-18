@@ -2,7 +2,7 @@
     "class":["gl-picture"],
     "dataset":{
         "glTarget":{
-            "role":"Target an img HTMLContent to display the same picture than on this one",
+            "role":"Target an img HTMLContent by its id attribute to display the same picture than on this one",
             "attribute":"data-gl-target"
         },
         "glSave":{

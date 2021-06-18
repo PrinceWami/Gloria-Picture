@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Picture Demo</title>
+</head>
+<body>
+    <h1>Preparing for Saving in base64 String format</h1>
+    <div style="display: inline-block;">
+        <!-- Must have width and Heigth defined... even as below or with styles -->
+        <img id="image" src="./asset/tpw.jpg">
+        <button name="photo" class="gl-picture" data-gl-target="image" data-gl-save="formToSave">Select Picture</button>
+    </div>
+    <br>
+    <form id="formToSave">
+        <button id="save">Click to Save</button>
+    </form>
+
+    <hr>
+
+    <img src="./asset/tpw.jpg" name="otherPhoto" alt="" class="gl-picture" data-gl-save="otherFormToSave">
+    <form id="otherFormToSave">
+        <button id="otherSave">Click to Save</button>
+    </form>
+</body>
+    <script>
+        document.getElementById("save").addEventListener("click", (e)=>{
+            e.preventDefault();
+            alert(document.getElementsByName("photo")[1].value)
+        });
+
+        document.getElementById("otherSave").addEventListener("click", (e)=>{
+            e.preventDefault();
+            alert(document.getElementsByName("otherPhoto")[1].value)
+        });
+    </script>
+    <script src="../dist/gloria.picture-min.js"></script>
+</html>

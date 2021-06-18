@@ -100,10 +100,18 @@ GloriaJS.pictures = (()=>{
 
                         if(document.getElementById(glPicture.dataset.glTarget)!=undefined){
                             document.getElementById(glPicture.dataset.glTarget).setAttribute("src",evt.target.result);
-                            
                         }
                         if(document.getElementById(glPicture.dataset.glSave)!=undefined){
                             hiddenValue.value = evt.target.result.toString();
+                        }
+                    }else if(glPicture.tagName.toLowerCase()=="a" || glPicture.tagName.toLowerCase()=="button"){
+                        if(document.getElementById(glPicture.dataset.glTarget)!=undefined){
+                            document.getElementById(glPicture.dataset.glTarget).setAttribute("src",evt.target.result);
+                            document.getElementById(glPicture.dataset.glTarget).setAttribute("value",evt.target.result);
+                        }
+                        if(document.getElementById(glPicture.dataset.glSave)!=undefined){
+                            hiddenValue.value = evt.target.result.toString();
+                            hiddenValue.click();
                         }
                     }else{
                         if(glPicture.tagName.toLocaleLowerCase() != "div"){
